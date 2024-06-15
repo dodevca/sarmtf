@@ -1,0 +1,4 @@
+[30-May-2023 23:52:50 Asia/Jakarta] PHP Warning:  require(/home/sarw4488/public_html/../app/Config/Paths.php): failed to open stream: No such file or directory in /home/sarw4488/public_html/index.php on line 32
+[30-May-2023 23:52:50 Asia/Jakarta] PHP Fatal error:  require(): Failed opening required '/home/sarw4488/public_html/../app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sarw4488/public_html/index.php on line 32
+[30-May-2023 23:52:51 Asia/Jakarta] PHP Warning:  require(/home/sarw4488/public_html/../app/Config/Paths.php): failed to open stream: No such file or directory in /home/sarw4488/public_html/index.php on line 32
+[30-May-2023 23:52:51 Asia/Jakarta] PHP Fatal error:  require(): Failed opening required '/home/sarw4488/public_html/../app/Config/Paths.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/sarw4488/public_html/index.php on line 32

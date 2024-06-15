@@ -1,0 +1,257 @@
+CRITICAL - 2023-06-06 00:26:25 --> Undefined index: ktp
+in APPPATH/Controllers/Form.php on line 98.
+ 1 APPPATH/Controllers/Form.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ktp', 'APPPATH/Controllers/Form.php', 98, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 00:26:58 --> Call to a member function getName() on array
+in APPPATH/Controllers/Form.php on line 98.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 00:38:37 --> mkdir(): Permission denied
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 176.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'SYSTEMPATH/HTTP/Files/UploadedFile.php', 176, [...])
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(176): mkdir('../../../public_html/uploads/ktp/', 511, true)
+ 3 SYSTEMPATH/HTTP/Files/UploadedFile.php(130): CodeIgniter\HTTP\Files\UploadedFile->setPath('../../../public_html/uploads/ktp/')
+ 4 APPPATH/Controllers/Form.php(96): CodeIgniter\HTTP\Files\UploadedFile->move('../../../public_html/uploads/ktp/', '1685986717_1a02831b2bbcbad5a9f8.png')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 01:05:54 --> mysqli_sql_exception: Operand should contain 1 column(s) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Form.php(130): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Form->submit()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-06 01:05:54 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (NULL, \'Rio Ananda\', \'6285156531228\', \'Kalijambe, Bener, Purworejo\', (\'1685988354_dec3277185f253622625.png\',\'1685988354_9d48eb8ccee0828e5bb9.png\'), \'fortuner434\', \'50000000000\', \'2\', \'20230506113750\', 1, \'2023-06-05\', \'20230506113750\', \'http://maps.google.com/maps?z=12&t=m&q=loc:-7.7434024,110.3904715\', \'Nama Sales\', \'Toyota\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (NULL, \'Rio Ananda\', \'6285156531228\', \'Kalijambe, Bener, Purworejo\', (\'1685988354_dec3277185f253622625.png\',\'1685988354_9d48eb8ccee0828e5bb9.png\'), \'fortuner434\', \'50000000000\', \'2\', \'20230506113750\', 1, \'2023-06-05\', \'20230506113750\', \'http://maps.google.com/maps?z=12&t=m&q=loc:-7.7434024,110.3904715\', \'Nama Sales\', \'Toyota\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (NULL, \'Rio Ananda\', \'6285156531228\', \'Kalijambe, Bener, Purworejo\', (\'1685988354_dec3277185f253622625.png\',\'1685988354_9d48eb8ccee0828e5bb9.png\'), \'fortuner434\', \'50000000000\', \'2\', \'20230506113750\', 1, \'2023-06-05\', \'20230506113750\', \'http://maps.google.com/maps?z=12&t=m&q=loc:-7.7434024,110.3904715\', \'Nama Sales\', \'Toyota\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (:uid:, :name:, :phone:, :address:, :identity:, :unit:, :price:, :tenor:, :package:, :insurance:, :date:, :surveyor:, :location:, :sales:, :dealer:)', [...], false)
+ 5 APPPATH/Controllers/Form.php(130): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-06 01:06:56 --> mysqli_sql_exception: Operand should contain 1 column(s) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Form.php(130): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Form->submit()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-06 01:06:56 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (\'20230606010656\', \'Rio Ananda\', \'6285156531228\', \'Kalijambe, Bener, Purworejo\', (\'1685988416_bf44b14b8974d77dbe36.png\',\'1685988416_6f3f4508d2a3b174a1a4.png\'), \'fortuner434\', \'50000000000\', \'2\', \'20230506113750\', 1, \'2023-06-05\', \'20230506113750\', \'http://maps.google.com/maps?z=12&t=m&q=loc:-7.7434024,110.3904715\', \'Nama Sales\', \'Toyota\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (\'20230606010656\', \'Rio Ananda\', \'6285156531228\', \'Kalijambe, Bener, Purworejo\', (\'1685988416_bf44b14b8974d77dbe36.png\',\'1685988416_6f3f4508d2a3b174a1a4.png\'), \'fortuner434\', \'50000000000\', \'2\', \'20230506113750\', 1, \'2023-06-05\', \'20230506113750\', \'http://maps.google.com/maps?z=12&t=m&q=loc:-7.7434024,110.3904715\', \'Nama Sales\', \'Toyota\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (\'20230606010656\', \'Rio Ananda\', \'6285156531228\', \'Kalijambe, Bener, Purworejo\', (\'1685988416_bf44b14b8974d77dbe36.png\',\'1685988416_6f3f4508d2a3b174a1a4.png\'), \'fortuner434\', \'50000000000\', \'2\', \'20230506113750\', 1, \'2023-06-05\', \'20230506113750\', \'http://maps.google.com/maps?z=12&t=m&q=loc:-7.7434024,110.3904715\', \'Nama Sales\', \'Toyota\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `submissions` (`uid`, `name`, `phone`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`) VALUES (:uid:, :name:, :phone:, :address:, :identity:, :unit:, :price:, :tenor:, :package:, :insurance:, :date:, :surveyor:, :location:, :sales:, :dealer:)', [...], false)
+ 5 APPPATH/Controllers/Form.php(130): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 01:13:53 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Form.php(120): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads/ktp', '1685988833_215b481b934496a34b07')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 01:14:03 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Form.php(120): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads/ktp', '1685988843_5757bb194476de212a74')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 01:20:33 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Form.php(120): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploads/ktp', '1685989233_a0690a0f3e35faad2c32')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 01:29:38 --> Call to undefined function App\Controllers\number_to_currency()
+in APPPATH/Controllers/Form.php on line 167.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 01:31:48 --> Class 'App\Controllers\IntlDateFormatter' not found
+in APPPATH/Controllers/Form.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Form->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:35:38 --> Undefined index: name
+in APPPATH/Views/form-view.php on line 11.
+ 1 APPPATH/Views/form-view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'APPPATH/Views/form-view.php', 11, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(184): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:37:25 --> Undefined index: phoneNumber
+in APPPATH/Views/form-view.php on line 15.
+ 1 APPPATH/Views/form-view.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: phoneNumber', 'APPPATH/Views/form-view.php', 15, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(184): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:38:57 --> Trying to get property 'name' of non-object
+in APPPATH/Views/form-view.php on line 11.
+ 1 APPPATH/Views/form-view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH/Views/form-view.php', 11, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(184): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:39:09 --> Undefined index: name
+in APPPATH/Views/form-view.php on line 11.
+ 1 APPPATH/Views/form-view.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'APPPATH/Views/form-view.php', 11, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(184): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:41:09 --> Undefined variable: i
+in APPPATH/Views/form-view.php on line 24.
+ 1 APPPATH/Views/form-view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: i', 'APPPATH/Views/form-view.php', 24, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(184): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:41:26 --> Undefined index: 
+in APPPATH/Views/form-view.php on line 32.
+ 1 APPPATH/Views/form-view.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: ', 'APPPATH/Views/form-view.php', 32, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(184): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:55:57 --> Undefined variable: unitCode
+in APPPATH/Controllers/Form.php on line 178.
+ 1 APPPATH/Controllers/Form.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: unitCode', 'APPPATH/Controllers/Form.php', 178, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:56:34 --> Undefined index: name
+in APPPATH/Controllers/Form.php on line 178.
+ 1 APPPATH/Controllers/Form.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'APPPATH/Controllers/Form.php', 178, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:57:11 --> Trying to get property 'name' of non-object
+in APPPATH/Controllers/Form.php on line 178.
+ 1 APPPATH/Controllers/Form.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'name\' of non-object', 'APPPATH/Controllers/Form.php', 178, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 18:57:24 --> Class 'name' not found
+in SYSTEMPATH/Database/MySQLi/Result.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-06 18:57:49 --> Invalid argument supplied for foreach()
+in APPPATH/Views/form-view.php on line 26.
+ 1 APPPATH/Views/form-view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/form-view.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(189): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 19:53:37 --> Cannot redeclare App\Controllers\Form::view()
+in APPPATH/Controllers/Form.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-06 19:53:55 --> Cannot redeclare App\Controllers\Form::view()
+in APPPATH/Controllers/Form.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-06 19:53:58 --> Cannot redeclare App\Controllers\Form::view()
+in APPPATH/Controllers/Form.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-06 19:54:10 --> Cannot redeclare App\Controllers\Form::view()
+in APPPATH/Controllers/Form.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-06 19:54:23 --> Cannot redeclare App\Controllers\Form::view()
+in APPPATH/Controllers/Form.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-06 20:10:56 --> join(): Passing glue string after array is deprecated. Swap the parameters
+in APPPATH/Controllers/Form.php on line 206.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'join(): Passing glue string after array is deprecated. Swap the parameters', 'APPPATH/Controllers/Form.php', 206, [...])
+ 2 APPPATH/Controllers/Form.php(206): join([...], '
+')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 20:18:38 --> syntax error, unexpected '.'
+in APPPATH/Controllers/Form.php on line 209.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Form.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Form')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Form')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Form')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Form', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 20:18:48 --> Undefined index: send
+in APPPATH/Controllers/Form.php on line 209.
+ 1 APPPATH/Controllers/Form.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: send', 'APPPATH/Controllers/Form.php', 209, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-06 23:30:09 --> Call to undefined function form_open()
+in APPPATH/Views/search.php on line 9.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('search', [], true)
+ 4 APPPATH/Controllers/Dashboard.php(74): view('search', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

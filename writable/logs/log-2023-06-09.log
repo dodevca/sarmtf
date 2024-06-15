@@ -1,0 +1,72 @@
+CRITICAL - 2023-06-09 14:33:20 --> Argument 4 passed to number_to_currency() must be of the type int, null given, called in /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php on line 133
+in SYSTEMPATH/Helpers/number_helper.php on line 113.
+ 1 APPPATH/Controllers/Dashboard.php(133): number_to_currency(500000000.0, 'IDR', 'id_ID', null)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230608105840')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 14:33:21 --> Argument 4 passed to number_to_currency() must be of the type int, null given, called in /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php on line 133
+in SYSTEMPATH/Helpers/number_helper.php on line 113.
+ 1 APPPATH/Controllers/Dashboard.php(133): number_to_currency(289000000.0, 'IDR', 'id_ID', null)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230609142742')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 14:33:22 --> Argument 4 passed to number_to_currency() must be of the type int, null given, called in /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php on line 133
+in SYSTEMPATH/Helpers/number_helper.php on line 113.
+ 1 APPPATH/Controllers/Dashboard.php(133): number_to_currency(289000000.0, 'IDR', 'id_ID', null)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230609142742')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 14:33:44 --> Argument 4 passed to number_to_currency() must be of the type int, null given, called in /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php on line 133
+in SYSTEMPATH/Helpers/number_helper.php on line 113.
+ 1 APPPATH/Controllers/Dashboard.php(133): number_to_currency(289000000.0, 'IDR', 'id_ID', null)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230609142742')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 14:44:59 --> Undefined offset: 0
+in APPPATH/Views/form-view.php on line 4.
+ 1 APPPATH/Views/form-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/form-view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(223): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230609144426')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 14:45:44 --> Invalid argument supplied for foreach()
+in APPPATH/Views/form-view.php on line 26.
+ 1 APPPATH/Views/form-view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/form-view.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(223): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230609144426')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 14:45:47 --> Invalid argument supplied for foreach()
+in APPPATH/Views/form-view.php on line 26.
+ 1 APPPATH/Views/form-view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Views/form-view.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(223): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230609144426')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-09 21:55:26 --> Undefined offset: 0
+in APPPATH/Views/export.php on line 46.
+ 1 APPPATH/Views/export.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/export.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/export.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('export', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(201): view('export', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

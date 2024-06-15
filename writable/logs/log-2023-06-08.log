@@ -1,0 +1,35 @@
+CRITICAL - 2023-06-08 00:00:18 --> Undefined index: dealer
+in APPPATH/Views/dashboard.php on line 43.
+ 1 APPPATH/Views/dashboard.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: dealer', 'APPPATH/Views/dashboard.php', 43, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(58): view('dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 00:04:54 --> Undefined offset: 0
+in APPPATH/Controllers/Form.php on line 172.
+ 1 APPPATH/Controllers/Form.php(172): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/Form.php', 172, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230606012653')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 10:00:19 --> Call to undefined function App\Controllers\reverse()
+in APPPATH/Controllers/Dashboard.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 10:30:04 --> Undefined index: result
+in APPPATH/Views/setting.php on line 29.
+ 1 APPPATH/Views/setting.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: result', 'APPPATH/Views/setting.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/setting.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('setting', [], true)
+ 5 APPPATH/Controllers/Setting.php(51): view('setting', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Setting->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Setting))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

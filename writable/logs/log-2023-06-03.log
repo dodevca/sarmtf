@@ -1,0 +1,1332 @@
+CRITICAL - 2023-06-03 17:59:46 --> Too few arguments to function App\Models\AuthModel::verify(), 0 passed in /home/sarw4488/sarmtf_core/app/Controllers/Form.php on line 20 and exactly 1 expected
+in APPPATH/Models/AuthModel.php on line 73.
+ 1 APPPATH/Controllers/Form.php(20): App\Models\AuthModel->verify()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:10:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:10:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:11:18 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:11:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:14:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:14:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:17:30 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:17:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:17:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'admin', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:17:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:17:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'admin', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:17:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:17:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:17:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:18:15 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_root'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_root', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:18:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:18:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_root'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_root', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:18:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:19:16 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtf2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:19:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:19:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:19:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:19:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:19:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:20:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:20:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:20:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:20:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:20:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:20:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:20:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:20:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:20:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:20:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:20:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:20:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:21:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', '', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:21:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:21:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', '', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:21:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:21:33 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:21:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:21:44 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:21:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:22:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:22:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:22:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:22:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 18:27:51 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'sarmtf_admin'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'sarmtf_admin', 'SARmtfDB2023', 'sarw4488_sarmtf', 3306, '', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`,...', Array, false)
+#3 /home/sarw4488/sarmtf_core/app/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Home.php(26): App\Models\AuthModel->getData()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 18:27:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `email`, `name`, `hierarchy`
+FROM `accounts`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/AuthModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Home.php(26): App\Models\AuthModel->getData()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 18:36:34 --> Undefined index: userHierarchy
+in APPPATH/Controllers/Home.php on line 33.
+ 1 APPPATH/Controllers/Home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: userHierarchy', 'APPPATH/Controllers/Home.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 18:37:08 --> Undefined index: userHierarchy
+in APPPATH/Controllers/Home.php on line 33.
+ 1 APPPATH/Controllers/Home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: userHierarchy', 'APPPATH/Controllers/Home.php', 33, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 18:45:50 --> syntax error, unexpected ';', expecting ']'
+in APPPATH/Controllers/Form.php on line 31.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Form.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Form')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Form')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Form')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Form', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:10:57 --> Undefined variable: userData
+in APPPATH/Controllers/Dashboard.php on line 35.
+ 1 APPPATH/Controllers/Dashboard.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userData', 'APPPATH/Controllers/Dashboard.php', 35, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 20:11:15 --> mysqli_sql_exception: Table 'sarw4488_sarmtf.submission' doesn't exist in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT unit, pr...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT unit, pr...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT unit, pr...')
+#3 /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php(43): CodeIgniter\Database\BaseConnection->query('SELECT unit, pr...')
+#4 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-03 20:11:15 --> Table 'sarw4488_sarmtf.submission' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT unit, price FROM submission WHERE unit LIKE \'%xenia%\' ORDER by date DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT unit, price FROM submission WHERE unit LIKE \'%xenia%\' ORDER by date DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT unit, price FROM submission WHERE unit LIKE \'%xenia%\' ORDER by date DESC')
+ 4 APPPATH/Controllers/Dashboard.php(43): CodeIgniter\Database\BaseConnection->query('SELECT unit, price FROM submission WHERE unit LIKE \'%xenia%\' ORDER by date DESC')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:14:28 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Dashboard.php on line 49.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Dashboard.php', 49, [...])
+ 2 APPPATH/Controllers/Dashboard.php(49): count(Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:15:51 --> Undefined index: price
+in APPPATH/Controllers/Dashboard.php on line 53.
+ 1 APPPATH/Controllers/Dashboard.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: price', 'APPPATH/Controllers/Dashboard.php', 53, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:20:10 --> Too few arguments to function number_to_currency(), 1 passed in /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php on line 56 and at least 2 expected
+in SYSTEMPATH/Helpers/number_helper.php on line 113.
+ 1 APPPATH/Controllers/Dashboard.php(56): number_to_currency(72000000.0)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:22:03 --> syntax error, unexpected ''results'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH/Controllers/Dashboard.php on line 44.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Dashboard.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dashboard')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Dashboard')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Dashboard', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 20:26:25 --> mysqli_sql_exception: Unknown column 'date' in 'order clause' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT uid, uni...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT uid, uni...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT uid, uni...')
+#3 /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php(48): CodeIgniter\Database\BaseConnection->query('SELECT uid, uni...')
+#4 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-03 20:26:25 --> Unknown column 'date' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT uid, unit, price, dateSubmited FROM submissions WHERE unit LIKE \'%xenia%\' ORDER by date DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT uid, unit, price, dateSubmited FROM submissions WHERE unit LIKE \'%xenia%\' ORDER by date DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT uid, unit, price, dateSubmited FROM submissions WHERE unit LIKE \'%xenia%\' ORDER by date DESC')
+ 4 APPPATH/Controllers/Dashboard.php(48): CodeIgniter\Database\BaseConnection->query('SELECT uid, unit, price, dateSubmited FROM submissions WHERE unit LIKE \'%xenia%\' ORDER by date DESC')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:30:08 --> Class 'App\Controllers\IntlDateFormatter' not found
+in APPPATH/Controllers/Dashboard.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:30:42 --> Use of undefined constant row - assumed 'row' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Dashboard.php on line 65.
+ 1 APPPATH/Controllers/Dashboard.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant row - assumed \'row\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Dashboard.php', 65, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:31:29 --> A dynamic controller is not allowed for security reasons. Route handler: \App\Controllers\Dashboard:view$1
+in SYSTEMPATH/Router/Router.php on line 472.
+ 1 SYSTEMPATH/Router/Router.php(472): CodeIgniter\Router\Exceptions\RouterException::forDynamicController('\\App\\Controllers\\Dashboard:view$1')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/view/20230603200841')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/view/20230603200841')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:33:34 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\Dashboard:view/$1
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Dashboard:view/$1')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/view/20230603200841')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/view/20230603200841')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:33:55 --> A dynamic controller is not allowed for security reasons. Route handler: \App\Controllers\Dashboard:view\$1
+in SYSTEMPATH/Router/Router.php on line 472.
+ 1 SYSTEMPATH/Router/Router.php(472): CodeIgniter\Router\Exceptions\RouterException::forDynamicController('\\App\\Controllers\\Dashboard:view\\$1')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/view/20230603200841')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/view/20230603200841')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:35:03 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\Dashboard:view/$1
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Dashboard:view/$1')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard/view/20230603200841')
+ 3 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('dashboard/view/20230603200841')
+ 4 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:45:45 --> Cannot redeclare App\Controllers\Unit::$builder
+in APPPATH/Controllers/Unit.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-03 20:54:55 --> Use of undefined constant helper - assumed 'helper' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Unit.php on line 20.
+ 1 APPPATH/Controllers/Unit.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant helper - assumed \'helper\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Unit.php', 20, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:55:08 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Unit.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:55:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Unit.php on line 33.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 20:56:07 --> mysqli_sql_exception: Unknown column 'unitCode' in 'field list' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `name`, ...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Unit.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Unit->index()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 20:56:07 --> Unknown column 'unitCode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `name`, `price`, `unitCode`, `image`
+FROM `units`
+ORDER BY `date` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, `price`, `unitCode`, `image`
+FROM `units`
+ORDER BY `date` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, `price`, `unitCode`, `image`
+FROM `units`
+ORDER BY `date` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `price`, `unitCode`, `image`
+FROM `units`
+ORDER BY `date` DESC', [], false)
+ 5 APPPATH/Controllers/Unit.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:56:23 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Controllers/Unit.php on line 36.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Controllers/Unit.php', 36, [...])
+ 2 APPPATH/Controllers/Unit.php(36): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 20:58:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Unit.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 21:19:24 --> Undefined variable: unitCode
+in APPPATH/Controllers/Unit.php on line 91.
+ 1 APPPATH/Controllers/Unit.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: unitCode', 'APPPATH/Controllers/Unit.php', 91, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 21:22:30 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH/Controllers/Unit.php on line 99.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Unit.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Unit')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Unit')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Unit')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Unit', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 21:22:32 --> syntax error, unexpected '$data' (T_VARIABLE)
+in APPPATH/Controllers/Unit.php on line 99.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Unit.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Unit')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Unit')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Unit')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Unit', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 22:10:55 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `name`, ...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Form.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Form->table()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 22:10:55 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `name`, `price`, `image`
+FROM `submissions`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, `price`, `image`
+FROM `submissions`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, `price`, `image`
+FROM `submissions`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `price`, `image`
+FROM `submissions`', [], false)
+ 5 APPPATH/Controllers/Form.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->table()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-03 22:10:57 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `name`, ...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Form.php(90): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Form->table()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-03 22:10:57 --> Unknown column 'name' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `name`, `price`, `image`
+FROM `submissions`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, `price`, `image`
+FROM `submissions`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, `price`, `image`
+FROM `submissions`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `price`, `image`
+FROM `submissions`', [], false)
+ 5 APPPATH/Controllers/Form.php(90): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->table()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 22:12:15 --> Undefined property: App\Controllers\Dashboard::$builder
+in APPPATH/Controllers/Dashboard.php on line 119.
+ 1 APPPATH/Controllers/Dashboard.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Dashboard::$builder', 'APPPATH/Controllers/Dashboard.php', 119, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 22:12:17 --> Undefined property: App\Controllers\Dashboard::$builder
+in APPPATH/Controllers/Dashboard.php on line 119.
+ 1 APPPATH/Controllers/Dashboard.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Dashboard::$builder', 'APPPATH/Controllers/Dashboard.php', 119, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 22:12:29 --> Undefined property: App\Controllers\Dashboard::$builder
+in APPPATH/Controllers/Dashboard.php on line 119.
+ 1 APPPATH/Controllers/Dashboard.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Dashboard::$builder', 'APPPATH/Controllers/Dashboard.php', 119, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-03 22:13:45 --> Call to undefined function App\Controllers\number_to_currency()
+in APPPATH/Controllers/Dashboard.php on line 127.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

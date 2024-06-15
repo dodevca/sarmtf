@@ -1,0 +1,35 @@
+CRITICAL - 2023-05-31 10:47:08 --> Undefined variable: auth
+in APPPATH/Controllers/Home.php on line 21.
+ 1 APPPATH/Controllers/Home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: auth', 'APPPATH/Controllers/Home.php', 21, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:11:41 --> Too few arguments to function App\Models\AuthModel::getData(), 0 passed in /home/sarw4488/sarmtf_core/app/Controllers/Home.php on line 21 and exactly 1 expected
+in APPPATH/Models/AuthModel.php on line 46.
+ 1 APPPATH/Controllers/Home.php(21): App\Models\AuthModel->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:12:00 --> Too few arguments to function App\Models\AuthModel::getData(), 0 passed in /home/sarw4488/sarmtf_core/app/Controllers/Home.php on line 21 and exactly 1 expected
+in APPPATH/Models/AuthModel.php on line 46.
+ 1 APPPATH/Controllers/Home.php(21): App\Models\AuthModel->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:12:01 --> Too few arguments to function App\Models\AuthModel::getData(), 0 passed in /home/sarw4488/sarmtf_core/app/Controllers/Home.php on line 21 and exactly 1 expected
+in APPPATH/Models/AuthModel.php on line 46.
+ 1 APPPATH/Controllers/Home.php(21): App\Models\AuthModel->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:12:03 --> Too few arguments to function App\Models\AuthModel::getData(), 0 passed in /home/sarw4488/sarmtf_core/app/Controllers/Home.php on line 21 and exactly 1 expected
+in APPPATH/Models/AuthModel.php on line 46.
+ 1 APPPATH/Controllers/Home.php(21): App\Models\AuthModel->getData()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

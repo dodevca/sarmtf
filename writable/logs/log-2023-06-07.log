@@ -1,0 +1,641 @@
+CRITICAL - 2023-06-07 00:26:41 --> Undefined variable: unitCode
+in APPPATH/Controllers/Dashboard.php on line 69.
+ 1 APPPATH/Controllers/Dashboard.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: unitCode', 'APPPATH/Controllers/Dashboard.php', 69, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 00:28:37 --> Undefined variable: i
+in APPPATH/Controllers/Dashboard.php on line 68.
+ 1 APPPATH/Controllers/Dashboard.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: i', 'APPPATH/Controllers/Dashboard.php', 68, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 00:34:51 --> Undefined variable: date
+in APPPATH/Views/search.php on line 23.
+ 1 APPPATH/Views/search.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: date', 'APPPATH/Views/search.php', 23, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/search.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('search', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(79): view('search', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->search()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 00:53:34 --> Undefined property: App\Controllers\Dashboard::$builder
+in APPPATH/Controllers/Dashboard.php on line 98.
+ 1 APPPATH/Controllers/Dashboard.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Dashboard::$builder', 'APPPATH/Controllers/Dashboard.php', 98, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230603200841')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 00:54:48 --> Undefined offset: 0
+in APPPATH/Views/view.php on line 4.
+ 1 APPPATH/Views/view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(148): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230603200841')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 00:56:15 --> Undefined variable: sendUrl
+in APPPATH/Views/view.php on line 98.
+ 1 APPPATH/Views/view.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sendUrl', 'APPPATH/Views/view.php', 98, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(148): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:05:31 --> Undefined variable: uid
+in APPPATH/Controllers/Dashboard.php on line 142.
+ 1 APPPATH/Controllers/Dashboard.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: uid', 'APPPATH/Controllers/Dashboard.php', 142, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:12:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::order()
+in APPPATH/Controllers/Dashboard.php on line 151.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:13:13 --> Undefined variable: packageId
+in APPPATH/Controllers/Dashboard.php on line 170.
+ 1 APPPATH/Controllers/Dashboard.php(170): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: packageId', 'APPPATH/Controllers/Dashboard.php', 170, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:13:25 --> Undefined index: result
+in APPPATH/Views/view.php on line 4.
+ 1 APPPATH/Views/view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: result', 'APPPATH/Views/view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(182): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:19:04 --> Undefined index: unitCode
+in APPPATH/Views/view.php on line 46.
+ 1 APPPATH/Views/view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: unitCode', 'APPPATH/Views/view.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(129): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:19:04 --> Undefined offset: 0
+in APPPATH/Views/view.php on line 4.
+ 1 APPPATH/Views/view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(129): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230603200841')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:19:07 --> Undefined offset: 0
+in APPPATH/Views/view.php on line 4.
+ 1 APPPATH/Views/view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(129): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230603200841')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:19:08 --> Undefined index: unitCode
+in APPPATH/Views/view.php on line 46.
+ 1 APPPATH/Views/view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: unitCode', 'APPPATH/Views/view.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(129): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:19:10 --> Undefined index: unitCode
+in APPPATH/Views/view.php on line 46.
+ 1 APPPATH/Views/view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: unitCode', 'APPPATH/Views/view.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(129): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230606012653')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:54:27 --> Undefined variable: monthFormat
+in APPPATH/Controllers/Dashboard.php on line 153.
+ 1 APPPATH/Controllers/Dashboard.php(153): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: monthFormat', 'APPPATH/Controllers/Dashboard.php', 153, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 01:55:05 --> Object of class IntlDateFormatter could not be converted to string
+in APPPATH/Controllers/Dashboard.php on line 153.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-07 02:38:10 --> mysqli_sql_exception: Unknown column 'submission.dateSubmitted' in 'where clause' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php(161): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-07 02:38:10 --> Unknown column 'submission.dateSubmitted' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = \'06\'
+ORDER BY `dateSubmitted` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = \'06\'
+ORDER BY `dateSubmitted` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = \'06\'
+ORDER BY `dateSubmitted` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = :MONTH(submission.dateSubmitted):
+ORDER BY `dateSubmitted` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(161): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-07 02:38:18 --> mysqli_sql_exception: Unknown column 'submission.dateSubmitted' in 'where clause' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php(161): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-07 02:38:18 --> Unknown column 'submission.dateSubmitted' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = \'06\'
+ORDER BY `dateSubmitted` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = \'06\'
+ORDER BY `dateSubmitted` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = \'06\'
+ORDER BY `dateSubmitted` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT `uid`, `name`, `phoneNumber`, `address`, `identity`, `unit`, `price`, `tenor`, `package`, `insurance`, `date`, `surveyor`, `location`, `sales`, `dealer`, `dateSubmitted`
+FROM `submissions`
+WHERE MONTH(submission.dateSubmitted) = :MONTH(submission.dateSubmitted):
+ORDER BY `dateSubmitted` ASC', [...], false)
+ 5 APPPATH/Controllers/Dashboard.php(161): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->table()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:07:38 --> Undefined index: results
+in APPPATH/Views/sales.php on line 5.
+ 1 APPPATH/Views/sales.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: results', 'APPPATH/Views/sales.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(44): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:07:44 --> Undefined index: results
+in APPPATH/Views/sales.php on line 5.
+ 1 APPPATH/Views/sales.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: results', 'APPPATH/Views/sales.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(44): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:07:46 --> Undefined index: results
+in APPPATH/Views/sales.php on line 5.
+ 1 APPPATH/Views/sales.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: results', 'APPPATH/Views/sales.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(44): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:07:47 --> Undefined index: results
+in APPPATH/Views/sales.php on line 5.
+ 1 APPPATH/Views/sales.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: results', 'APPPATH/Views/sales.php', 5, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(44): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:30:30 --> Call to undefined function form_open_multipart()
+in APPPATH/Views/sales.php on line 38.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 4 APPPATH/Controllers/Sales.php(50): view('sales', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:30:50 --> Undefined variable: date
+in APPPATH/Views/sales.php on line 56.
+ 1 APPPATH/Views/sales.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: date', 'APPPATH/Views/sales.php', 56, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(51): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:31:04 --> Undefined variable: date
+in APPPATH/Views/sales.php on line 56.
+ 1 APPPATH/Views/sales.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: date', 'APPPATH/Views/sales.php', 56, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(50): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:43:46 --> Call to undefined function form_open_multipart()
+in APPPATH/Views/sales-detail.php on line 17.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales-detail', [], true)
+ 4 APPPATH/Controllers/Sales.php(87): view('sales-detail', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->read('20230603213945')
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 03:44:45 --> Undefined index: password
+in APPPATH/Views/sales-detail.php on line 40.
+ 1 APPPATH/Views/sales-detail.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: password', 'APPPATH/Views/sales-detail.php', 40, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales-detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales-detail', [], true)
+ 5 APPPATH/Controllers/Sales.php(89): view('sales-detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->read('20230603213945')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 04:03:18 --> Undefined offset: 0
+in APPPATH/Views/sales-detail.php on line 21.
+ 1 APPPATH/Views/sales-detail.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/sales-detail.php', 21, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales-detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales-detail', [], true)
+ 5 APPPATH/Controllers/Sales.php(93): view('sales-detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->read('20230603213922')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 04:32:05 --> Undefined variable: db
+in APPPATH/Controllers/Sales.php on line 98.
+ 1 APPPATH/Controllers/Sales.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH/Controllers/Sales.php', 98, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->create()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-07 04:32:19 --> mysqli_sql_exception: Duplicate entry 'toyon@gmail.com' for key 'email' in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `sa...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sa...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sa...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sa...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Sales.php(98): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Sales->create()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-07 04:32:19 --> Duplicate entry 'toyon@gmail.com' for key 'email'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `sales` (`uid`, `name`, `email`, `dealer`) VALUES (\'20230607043219\', \'Toyon\', \'toyon@gmail.com\', \'Hyundai\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sales` (`uid`, `name`, `email`, `dealer`) VALUES (\'20230607043219\', \'Toyon\', \'toyon@gmail.com\', \'Hyundai\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sales` (`uid`, `name`, `email`, `dealer`) VALUES (\'20230607043219\', \'Toyon\', \'toyon@gmail.com\', \'Hyundai\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sales` (`uid`, `name`, `email`, `dealer`) VALUES (:uid:, :name:, :email:, :dealer:)', [...], false)
+ 5 APPPATH/Controllers/Sales.php(98): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->create()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 04:38:43 --> Undefined offset: 0
+in APPPATH/Views/sales-detail.php on line 29.
+ 1 APPPATH/Views/sales-detail.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/sales-detail.php', 29, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales-detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales-detail', [], true)
+ 5 APPPATH/Controllers/Sales.php(146): view('sales-detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->read('20230607043640')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 04:44:14 --> Array to string conversion
+in APPPATH/Views/sales.php on line 18.
+ 1 APPPATH/Views/sales.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH/Views/sales.php', 18, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sales.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('sales', [], true)
+ 5 APPPATH/Controllers/Sales.php(50): view('sales', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-07 05:13:03 --> mysqli_sql_exception: Column 'name' cannot be null in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 /home/sarw4488/sarmtf_core/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 /home/sarw4488/sarmtf_core/app/Controllers/Surveyor.php(68): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Surveyor->create()
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surveyor))
+#7 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-07 05:13:03 --> Column 'name' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `surveyors` (`uid`, `name`) VALUES (\'20230607051303\', NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `surveyors` (`uid`, `name`) VALUES (\'20230607051303\', NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `surveyors` (`uid`, `name`) VALUES (\'20230607051303\', NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `surveyors` (`uid`, `name`) VALUES (:uid:, :name:)', [...], false)
+ 5 APPPATH/Controllers/Surveyor.php(68): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Surveyor->create()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Surveyor))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 06:11:29 --> Undefined index: uid
+in APPPATH/Controllers/Form.php on line 94.
+ 1 APPPATH/Controllers/Form.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Controllers/Form.php', 94, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->submit()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:09 --> Undefined index: uid
+in APPPATH/Views/unit.php on line 33.
+ 1 APPPATH/Views/unit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/unit.php', 33, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unit', [], true)
+ 5 APPPATH/Controllers/Unit.php(46): view('unit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:24 --> Undefined index: uid
+in APPPATH/Views/unit.php on line 33.
+ 1 APPPATH/Views/unit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/unit.php', 33, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unit', [], true)
+ 5 APPPATH/Controllers/Unit.php(46): view('unit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:36 --> Undefined index: uid
+in APPPATH/Views/unit.php on line 33.
+ 1 APPPATH/Views/unit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/unit.php', 33, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unit', [], true)
+ 5 APPPATH/Controllers/Unit.php(50): view('unit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:20:37 --> Undefined index: uid
+in APPPATH/Views/unit.php on line 33.
+ 1 APPPATH/Views/unit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/unit.php', 33, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unit.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unit', [], true)
+ 5 APPPATH/Controllers/Unit.php(50): view('unit', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:23:51 --> Call to undefined function App\Controllers\number_to_currency()
+in APPPATH/Controllers/Unit.php on line 50.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:46:56 --> Undefined index: email
+in APPPATH/Controllers/Unit.php on line 89.
+ 1 APPPATH/Controllers/Unit.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: email', 'APPPATH/Controllers/Unit.php', 89, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->read('avanza345')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:48:07 --> Undefined index: uid
+in APPPATH/Views/unit-detail.php on line 9.
+ 1 APPPATH/Views/unit-detail.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/unit-detail.php', 9, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unit-detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unit-detail', [], true)
+ 5 APPPATH/Controllers/Unit.php(93): view('unit-detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->read('avanza345')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 20:48:38 --> Undefined index: uid
+in APPPATH/Views/unit-detail.php on line 77.
+ 1 APPPATH/Views/unit-detail.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/unit-detail.php', 77, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/unit-detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('unit-detail', [], true)
+ 5 APPPATH/Controllers/Unit.php(93): view('unit-detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->read('avanza345')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 21:02:23 --> Undefined offset: 0
+in APPPATH/Controllers/Sales.php on line 232.
+ 1 APPPATH/Controllers/Sales.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/Sales.php', 232, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->delete('20230607043205')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 21:02:27 --> Undefined offset: 0
+in APPPATH/Controllers/Sales.php on line 232.
+ 1 APPPATH/Controllers/Sales.php(232): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Controllers/Sales.php', 232, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Sales->delete('20230607043205')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 21:10:09 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in /home/sarw4488/sarmtf_core/system/Validation/Validation.php on line 314
+in SYSTEMPATH/Validation/Rules.php on line 126.
+ 1 SYSTEMPATH/Validation/Validation.php(314): CodeIgniter\Validation\Rules->is_unique('avanza2011', null)
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('unitCode', 'unitCode', 'avanza2011', [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH/Controllers/Unit.php(77): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Unit->create()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unit))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 22:19:35 --> Undefined offset: 0
+in APPPATH/Views/form-view.php on line 4.
+ 1 APPPATH/Views/form-view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/form-view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form-view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form-view', [], true)
+ 5 APPPATH/Controllers/Form.php(217): view('form-view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->view('20230607221208')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 22:40:34 --> Undefined offset: 0
+in APPPATH/Views/view.php on line 4.
+ 1 APPPATH/Views/view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(126): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230603200841')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 22:41:03 --> Undefined offset: 0
+in APPPATH/Views/view.php on line 4.
+ 1 APPPATH/Views/view.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 0', 'APPPATH/Views/view.php', 4, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('view', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(126): view('view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->view('20230603200841')
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:05:18 --> Use of undefined constant DESC - assumed 'DESC' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Dashboard.php on line 46.
+ 1 APPPATH/Controllers/Dashboard.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant DESC - assumed \'DESC\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Dashboard.php', 46, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:05:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResult()
+in APPPATH/Controllers/Dashboard.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:05:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH/Controllers/Dashboard.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:06:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+in APPPATH/Controllers/Dashboard.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:11:17 --> Class 'Array' not found
+in SYSTEMPATH/Database/MySQLi/Result.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-06-07 23:22:19 --> mysqli_sql_exception: Table 'sarw4488_sarmtf.submission' doesn't exist in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(sa...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(sa...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(sa...')
+#3 /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php(42): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(sa...')
+#4 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-07 23:22:19 --> Table 'sarw4488_sarmtf.submission' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(sales) FROM submission LIMIT 0, 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(sales) FROM submission LIMIT 0, 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(sales) FROM submission LIMIT 0, 5')
+ 4 APPPATH/Controllers/Dashboard.php(42): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(sales) FROM submission LIMIT 0, 5')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-07 23:28:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OVER () AS totalRecords FROM submissions GROUP by sales LIMIT 0, 5' at line 1 in /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/sarw4488/sarmtf_core/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /home/sarw4488/sarmtf_core/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /home/sarw4488/sarmtf_core/app/Controllers/Dashboard.php(42): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+#5 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /home/sarw4488/sarmtf_core/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/sarw4488/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-07 23:28:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OVER () AS totalRecords FROM submissions GROUP by sales LIMIT 0, 5' at line 1
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) as totalCol, OVER () AS totalRecords FROM submissions GROUP by sales LIMIT 0, 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) as totalCol, OVER () AS totalRecords FROM submissions GROUP by sales LIMIT 0, 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) as totalCol, OVER () AS totalRecords FROM submissions GROUP by sales LIMIT 0, 5')
+ 4 APPPATH/Controllers/Dashboard.php(42): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) as totalCol, OVER () AS totalRecords FROM submissions GROUP by sales LIMIT 0, 5')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:50:23 --> Undefined index: unit
+in APPPATH/Views/dashboard.php on line 72.
+ 1 APPPATH/Views/dashboard.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: unit', 'APPPATH/Views/dashboard.php', 72, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(59): view('dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-07 23:51:22 --> Undefined index: dealer
+in APPPATH/Views/dashboard.php on line 66.
+ 1 APPPATH/Views/dashboard.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: dealer', 'APPPATH/Views/dashboard.php', 66, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(59): view('dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

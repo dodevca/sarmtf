@@ -1,0 +1,11 @@
+CRITICAL - 2023-06-05 23:46:34 --> Undefined index: uid
+in APPPATH/Views/form.php on line 146.
+ 1 APPPATH/Views/form.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: uid', 'APPPATH/Views/form.php', 146, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/form.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('form', [], true)
+ 5 APPPATH/Controllers/Form.php(48): view('form', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Form->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
