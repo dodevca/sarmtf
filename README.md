@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
@@ -54,3 +55,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+=======
+# sarmtf
+The system for submitting car credit reports by sales to managers is equipped with WhatsApp notifications
+>>>>>>> 9edbc106b0f23c5e29cd850de3e1d1f585f809bb
