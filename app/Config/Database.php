@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'sarw4488_admin',
-        'password' => 'SARmtfDB2023',
-        'database' => 'sarw4488_sarmtf',
+        'username' => 'root',
+        'password' => '',
+        'database' => '',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
